@@ -1,0 +1,284 @@
+/* Google Font Import - UD Digi Kyokasho NP-B */
+
+/* Google Font Import - Shippori Mincho */
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&display=swap");
+
+/* Google Font Import - BIZ UDGothic */
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap');
+
+/* Google Font Import - Noto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&display=swap');
+
+/* Google Font Import - Zen Old Mincho */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700&display=swap');
+
+/* Google Font Import - Train One */
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+/* Google Font Import - Rampart One */
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+:root {
+  --black: #0A0A0A;
+  --blue: #0070C0;
+  --light-blue: #C7D4E3;
+  --white: #FFFFFF;
+}
+
+html {
+  box-sizing: border-box;
+  /* font-family: "Shippori Mincho", serif; */
+  /* font-family: 'BIZ UDGothic', sans-serif; */
+  font-family: 'Noto Serif JP', serif;
+  scroll-behavior: smooth;
+}
+
+body {
+	color: var(--black);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* ol,
+ul {
+  list-style: none;
+} */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*** Utility Classes ***/
+
+/* Background Color */
+.bg-light-blue {
+	background-color: var(--light-blue);
+}
+
+/* Height */
+.h-full { height: 100%; }
+.min-h-75 { min-height: 75px !important;}
+.min-h-225 { min-height: 225px !important;}
+
+/* Width */
+.max-w-92-percent { max-width: 92%; }
+.max-w-1280 { max-width: 1280px; }
+.max-w-1240 { max-width: 1240px; }
+.max-w-1030 { max-width: 1030px; }
+.max-w-1050 { max-width: 1050px; }
+
+/* Font Family */
+.font-shippori { font-family: "Shippori Mincho", serif; }
+.font-ud-gothic { font-family: 'BIZ UDGothic', sans-serif; }
+.font-zen-old-mincho { font-family: 'Zen Old Mincho', serif; }
+.font-train-one { font-family: 'Train One', cursive; }
+.font-rampart-one { font-family: 'Rampart One', cursive; }
+
+/* Font Size */
+.fs-96 { font-size: clamp(4rem, 3.1329rem + 3.6994vw, 6rem); /* font-size: 6rem; */ }
+.fs-64 { font-size: 4rem; }
+.fs-60 { font-size: clamp(1.5rem, 0.5246rem + 4.1618vw, 3.75rem); /* fontfont-size: clamp(1.5rem, 0.9539rem + 2.3301vw, 3.75rem); -size: 3.75rem;*/ } 
+.fs-48 { font-size: 3rem; }
+.fs-32 { font-size: clamp(1.25rem, 0.9249rem + 1.3873vw, 2rem); /* font-size: clamp(1.25rem, 1.068rem + 0.7767vw, 2rem); font-size: 2rem;  */ }
+.fs-24 { font-size: 1.5rem; }
+.fs-20 { font-size: clamp(1rem, 0.8916rem + 0.4624vw, 1.25rem); /* font-size: 1.25rem; */ }
+.fs-18 { font-size: clamp(0.875rem, 0.7666rem + 0.4624vw, 1.125rem); }
+.fs-16 { font-size: clamp(0.75rem, 0.6416rem + 0.4624vw, 1rem); }
+
+/* Font Weight */
+.fw-normal { font-weight: 400; }
+.fw-medium { font-weight: 500; }
+.fw-semibold { font-weight: 600; }
+.fw-bold { font-weight: 700; }
+.fs-italic { font-style: italic; }
+
+/* Line Height */
+.line-height-32 { line-height: clamp(1.5rem, 1.2832rem + 0.9249vw, 2rem); /* line-height: 2rem; */ }
+.line-height-24 { line-height: 1.5rem; }
+
+/* Text Color */
+.text-white { color: var(--white); }
+.text-blue { color: var(--blue); }
+
+/* Position  */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.z-index-1 { z-index: 1; }
+.z-index-10 { z-index: 10; }
+
+/* Display */
+.d-none { display: none; }
+.d-flex { display: flex; }
+.gap-20 { gap: 1.25rem; }
+.gap-32 { gap: 2rem; }
+.gap-40 { gap: 2.5rem; }
+.gap-64 { gap: 4rem; }
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.justify-content-center { justify-content: center; }
+.justify-content-between { justify-content: space-between; }
+.justify-content-evenly { justify-content: space-evenly; }
+.justify-content-end { justify-content: flex-end; }
+.align-items-center { align-items: center; }
+.align-self-center { align-self: center; }
+
+/* Text Shadow */
+.text-shadow-sm { text-shadow: 1px 1px 2px rgba(0,0,0,0.6); }
+.text-shadow { text-shadow: 2px 2px 2px rgba(0,0,0,0.6); }
+.text-shadow-lg { text-shadow: 4px 4px 4px rgba(0,0,0,0.6); }
+
+/* Box Shadow */
+.box-shadow-sm { 
+  box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.2);
+ }
+.box-shadow { 
+  box-shadow: 2px 2px 24px 1px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 2px 2px 24px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 2px 24px 1px rgba(0,0,0,0.5);
+ }
+.box-shadow-lg { 
+  box-shadow: 4px 4px 30px 2px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 4px 4px 30px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 4px 4px 30px 2px rgba(0,0,0,0.5);
+ }
+
+/* Margin */
+.m-inline-auto { margin-inline: auto; }
+.mt-72 { margin-top: 4.5rem;}
+.mt-64 { margin-top: 4rem;}
+.mt-48 { margin-top: 3rem;}
+.mt-40 { margin-top: 2.5rem;}
+.mt-32 { margin-top: 2rem;}
+.mt-24 { margin-top: 1.5rem;}
+.mt-20 { margin-top: 1.25rem;}
+.mt-16 { margin-top: 1rem;}
+.mt-8 { margin-top: 0.5rem;}
+.mb-0 { margin-bottom: 0;}
+
+/* Padding */
+.p-96 { padding: clamp(3rem, 1.6994rem + 5.5491vw, 6rem) 1rem; }
+
+
+/* Blockquote */
+.blockquote {
+  /* margin: 0; */
+  padding: clamp(1rem, 0.5856rem + 1.768vw, 2rem); 
+  background-color: var(--light-blue); 
+  border: 1px solid #A4C1E1;
+}
+
+.blockquote-left-border {
+  border-left-width: 0.75rem !important;
+  border-left-color: #A4C1E1 !important;
+}
+
+.blockquote_container {
+  padding-inline: 2rem;
+}
+
+.blockquote_credit::before {
+  content: "\2014\0020"; /* Long hyphen(-) and a space*/
+}
+
+/* Animation CSS */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.15)
+  }
+  70% {
+    transform: scale(.9)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  70% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  70% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes spinIn {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg) scale(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: rotate(360deg) scale(1.15)
+  }
+  70% {
+    transform: rotate(360deg) scale(.9)
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
